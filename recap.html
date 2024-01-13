@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
-    <!-- Your custom CSS file -->
+    <!-- custom CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -59,26 +59,55 @@
         <div class="container">
             <h2 class="display-4 text-center">Portfolio</h2>
             <p>recent projects</p>
-            <div class="row">
-                <div class="col-lg-6">
-                <img src="images/1.jpg" alt="images/Images1.jpg" class="img-fluid mb-3">
-                
+            <div class="project-grid">
+               
+                <div class="project">
+                    <img src="images/1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>Bingwa project.</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-grid">
+               
+                <div class="project">
+                    <img src="images/1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project z</h3>
+                        <p>Contracted to do this .</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                  
+                </div>
+            
             </div>
-            <div class="col-lg-6">
-                <img src="images/1.jpg" alt="Images1.jpg" class="img-fluid mb-3">
-                 
-            </div>
-                <!-- Add your portfolio items here -->
-            </div>
+        </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="display-4 text-center">Contact</h2>
+            <h2 class="display-4 text-center">Contact me</h2>
             <p class="text-center">Feel free to contact me via email or social media.</p>
             <!-- contact form details here -->
+              <div class="container">
+        <form action="#" method="post" id="contactForm">
+            
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
         </div>
     </section>
      <footer class="py-4 bg-dark text-white">
@@ -92,7 +121,7 @@
                 <div class="col-md-6 text-center text-md-right">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#about">About</a></li>
+                        <li><a href="about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
