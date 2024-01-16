@@ -1,131 +1,182 @@
-/* Add your custom styles here */
+/* Custom Styles */
+
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Customize navigation styles if needed */
+/* Navigation */
 .navbar {
-    background-color: #343a40;
+  background-color: #343a40;
 }
 
-.navbar-dark .navbar-brand {
-    color: #ffffff;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-color: #ffffff;
+.navbar-nav .nav-link {
+  color: #fff;
 }
 
-/* Add more styles for other sections as needed */
-$primary-color: #3498db;
-
-// Your existing styles
-
-.button {
-    background-color: $primary-color;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: darken($primary-color, 10%);
-    }
+/* Carousel */
+#carouselExampleControls {
+  max-height: 400px;
+  overflow: hidden;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.carousel-inner {
+  height: 100%;
 }
 
-label {
-    margin-bottom: 8px;
+.carousel-item img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
 }
 
-input, textarea {
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+/* About Section */
+#about {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
 }
 
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+#about h2 {
+  color: #343a40;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-/* Previous styles remain unchanged */
-
-.portfolio {
-    margin-top: 40px;
+/* Project Section */
+#portfolio {
+  padding: 5rem 0;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .project {
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.05);
+  position: relative;
+  overflow: hidden;
 }
 
 .project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .project-info {
-    padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(52, 58, 64, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.project-info h3 {
-    margin-bottom: 10px;
+.project:hover .project-info {
+  opacity: 1;
+}
+
+.project-info h3,
+.project-info p {
+  margin: 0;
 }
 
 .learn-more-btn {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #20c61a;
+  border: none;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .learn-more-btn:hover {
-    background-color: #2980b9;
-}
-#about img {
-    transition: opacity 2s ease-in-out;
+  background-color: #07a546;
 }
 
-/* Add hover effect to images in the About section */
-#about img:hover {
-    opacity: 0.7;
+/* Contact Section */
+#contact {
+  background-color: #eff1f4;
+  color: #20c61a;
+  padding: 5rem 0;
+}
+
+#contact h2 {
+  color: #20c61a;
+}
+
+#contactForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #20c61a;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #080c08;
+}
+
+#contactForm button {
+  background-color: #20c61a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #20b14b;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  #about,
+  #portfolio,
+  #contact {
+    padding: 3rem 0;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
