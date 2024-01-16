@@ -121,3 +121,11 @@ h2 {
 .learn-more-btn:hover {
     background-color: #2980b9;
 }
+#about img {
+    transition: opacity 2s ease-in-out;
+}
+
+/* Add hover effect to images in the About section */
+#about img:hover {
+    opacity: 0.7;
+}
